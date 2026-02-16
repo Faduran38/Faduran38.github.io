@@ -9,4 +9,7 @@ Description: This form is a registration copy for patients who are being admitte
 -->
 <html> 
 <head> 
-<meta charset=
+<meta charset="utf-8">
+<title>Faviana's HW 1</title>
+<link rel="stylesheet" href="homework1.css">
+</head>
