@@ -1,0 +1,12 @@
+<!doctype html>
+<!-- 
+Program Name: Patientform.html
+Author: Faviana A Duran 
+Date Created: February 10,2026
+Data Last Edited: February 20, 2026
+Version: 1.0
+Description: This form is a registration copy for patients who are being admitted into a clinic. It includes things like DOB, email, phone number, etc. 
+-->
+<html> 
+<head> 
+<meta charset=
