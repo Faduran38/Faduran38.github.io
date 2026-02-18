@@ -8,8 +8,21 @@ Version: 1.0
 Description: This form is a registration copy for patients who are being admitted into a clinic. It includes things like DOB, email, phone number, etc. 
 -->
 <html> 
-<head> 
-<meta charset="utf-8">
-<title>Faviana's HW 1</title>
-<link rel="stylesheet" href="homework1.css">
-</head>
+  <head> 
+      <meta charset="utf-8">
+      <title>Faviana's HW 1</title>
+<!-- Load in External CSS -->
+      <link rel="stylesheet" href="homework1.css">
+  </head>
+<body>
+        <div id="header"
+        <table width="100%">
+  <tr>
+  <td>
+<img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px">
+</td>
+<td valign="bottom" align="right">Today's date is: <span id="today">Date goes here </span></td>
+</tr>
+</table>
+</div> 
+
