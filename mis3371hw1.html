@@ -37,8 +37,8 @@ Description: This form is a registration copy for patients who are being admitte
   <td align="left">
 <ul>
 <label for="firstname">First Name</label>
-<label for="middleinitial>Middle Initial</label>
-<label for="lastname>Last Name</label>
+<label for="middleinitial">Middle Initial</label>
+<label for="lastname">Last Name</label>
 <label for="address">Address:</label>
 <label for="city">City:</label>
 <label for="state">State:</label>
@@ -96,20 +96,17 @@ Description: This form is a registration copy for patients who are being admitte
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
-  
-</td>
+  <label for="zip">Zipcode:</label>
+  <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode"
+  </td>
 <td>
-<input type="text"
-       size="30"
-       minlength="2"
-       maxlength="30"
+<input type="text" size="30"
+       minlength="2" maxlength="30"
        name="firstname"
        placeholder="Required"
        required >
-<input type="text"
-       size="30"
-       minlength="1"
-       maxlength="2"
+<input type="text" size="30"
+       minlength="1" maxlength="2"
        name="middleinitial"
        placeholder="MI"
       required >
