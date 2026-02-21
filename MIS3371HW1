@@ -15,6 +15,7 @@ Description: This form is a registration copy for patients who are being admitte
       <link rel="stylesheet" href="homework1.css">
   </head>
 <body>
+        <h1>PATIENT REGISTRATION FORM</h1>
           <div id="header"
           <table width="100%">
     <tr>
@@ -34,9 +35,13 @@ Description: This form is a registration copy for patients who are being admitte
      </tr>
     <tr class="form">
   <td align="left">
+<ul>
 <label for="firstname">First Name</label>
 <label for="middleinitial>Middle Initial</label>
 <label for="lastname>Last Name</label>
+<label for="address">Address:</label>
+<label for="city">City:</label>
+<label for="state"
 </td>
 <td>
 <input type="text"
@@ -60,5 +65,6 @@ Description: This form is a registration copy for patients who are being admitte
        name="lastname"
        placeholder="Required"
        required >
+
 
 
