@@ -6,3 +6,7 @@ Data Last Edited: February 20, 2026
 Version: 1.0
 Description: this will be used to style the html and website that is created for a patient registration form
 */
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
