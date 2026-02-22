@@ -14,6 +14,7 @@ Description: This form is a registration copy for patients who are being admitte
 <!-- Load in External CSS -->
       <link rel="stylesheet" href="mis3371hw1.css">
   </head>
+  <!-- Main Body of HTML -->
 <body>
   <header>
   <h1>MedicalFirst Clinic</h1>
@@ -21,6 +22,7 @@ Description: This form is a registration copy for patients who are being admitte
         <h2>PATIENT REGISTRATION FORM</h2>
           <div id="header"
           <table width="100%">
+            <div id="bannerimage"></div>
     <tr>
   <td>
 <img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px">
@@ -101,7 +103,6 @@ Description: This form is a registration copy for patients who are being admitte
             </select>
   <label for="zip">Zipcode:</label>
   <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode"
-  </td>
 <td>
 <input type="text" size="30"
        minlength="2" maxlength="30"
@@ -120,6 +121,16 @@ Description: This form is a registration copy for patients who are being admitte
        name="lastname"
        placeholder="Required"
        required >
+</td>
+<!-- Enter in Javascript for the date -->
+      <script src="mis3371hw1.js"></script>
+      <script>
+        document.getElementById("today").innerHTML = new Date().toLocaleDateString();
+      </script>
+    </tr>
+        </table>
+  </div>
+</body>
+</html>
 
-
-
+      </script>
