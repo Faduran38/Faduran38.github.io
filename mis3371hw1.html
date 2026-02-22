@@ -22,9 +22,9 @@ Description: This form is a registration copy for patients who are being admitte
         <h2>PATIENT REGISTRATION FORM</h2>
           <div id="header"
           <table width="100%">
+            <tr>
+              <td>
             <div id="bannerimage"></div>
-    <tr>
-  <td>
 <img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px">
             </td>
             <td valign="bottom" align="right">Today's date is: <span id="today">Date goes here </span></td>
@@ -40,13 +40,47 @@ Description: This form is a registration copy for patients who are being admitte
      </tr>
     <tr class="form">
   <td align="left">
-<ul>
+    <!-- Body Elements -->
 <label for="firstname">First Name</label>
 <label for="middleinitial">Middle Initial</label>
 <label for="lastname">Last Name</label>
+  </td>
+      <td> 
+      <input type="text" size="30"
+       minlength="2" maxlength="30"
+       name="firstname"
+       placeholder="Required"
+       required >
+        <input type="text" size="30"
+       minlength="1" maxlength="2"
+       name="middleinitial"
+       placeholder="MI"
+      required >
+        <input type="text" size="30"
+       minlength="2" maxlength="30"
+       name="lastname"
+       placeholder="Required"
+       required >
+<span id="gov_name">
+    </tr>
+</span>
+          <tr class="form"
+            <td align="right">
 <label for="address">Address:</label>
+          </td>
+      <td>
+        <input trype="text" size="30" 
+          maxlength="35" id="address1" name="address1"
+          placeholder="Primary Address" required>
+      </td>
+          <tr class="form">
+            <td align="right">
 <label for="city">City:</label>
 <label for="state">State:</label>
+ <label for="zip">Zipcode:</label>
+  <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode"
+<td>
+        <input type="text" size="10" maxlength="35" id="city" name="city" required>
   <select required>
     <option value=""></option>
                 <option value="AL">Alabama</option>
@@ -101,27 +135,37 @@ Description: This form is a registration copy for patients who are being admitte
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
             </select>
-  <label for="zip">Zipcode:</label>
-  <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode"
-<td>
-<input type="text" size="30"
-       minlength="2" maxlength="30"
-       name="firstname"
-       placeholder="Required"
-       required >
-<input type="text" size="30"
-       minlength="1" maxlength="2"
-       name="middleinitial"
-       placeholder="MI"
-      required >
-<input type="text"
-       size="30"
-       minlength="2"
-       maxlength="30"
-       name="lastname"
-       placeholder="Required"
-       required >
+ <label for="gender">Gender</label>
+<label for="male">Male</label>
+<label for="female">Female</label>
+  <input type="radio" name="gender" value="male" required>  
+  <input type="radio" name="gender" value="female" required> 
 </td>
+            <tr class="form"
+              <td align="right">
+              <label for="phone">Phone Number</label>
+        </td>
+          <td> 
+            <input type="text" size="30" maxlength="10"
+              id="cell_phone" name="cell_phone" placeholder="123-456-7890">
+          </td>
+            <tr class="form"
+              <td align="right">
+              <label for="email">Email:</label>
+          </td>
+          <td> 
+            <input type="text" size="30" maxlength="35" 
+              id="email" name="email" placeholder="youremail12@gmail.com"
+          </td>
+            <tr>
+              <td colspan="3" 
+                <center>
+                <input type="submit"> 
+                <input type="reset"
+                  </center>
+              </td>
+            </tr>
+          </td>
 <!-- Enter in Javascript for the date -->
       <script src="mis3371hw1.js"></script>
       <script>
