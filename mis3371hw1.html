@@ -7,27 +7,26 @@ Data Last Edited: February 20, 2026
 Version: 1.0
 Description: This form is a registration copy for patients who are being admitted into a clinic. It includes things like DOB, email, phone number, etc. 
 -->
-<html> 
+  <html lang="en">
   <head> 
-    <html lang="en"></head>
       <meta charset="utf-8">
       <title>Faviana's HW 1</title>
 <!-- Load in External CSS -->
       <link rel="stylesheet" href="mis3371hw1.css">
-  </head>
+    </head>
+  </html>
   <!-- Main Body of HTML -->
 <body>
   <header>
   <h1>MedicalFirst Clinic</h1>
   </header>
         <h2>PATIENT REGISTRATION FORM</h2>
-          <div id="header">
+          <div id="mainheader">
           <table width="100%">
             <tr>
               <td>
             <div id="bannerimage"></div>
-<img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px">
-            </td>
+<img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px"></td>
             <td valign="bottom" align="right">Today's date is: <span id="today">Date goes here </span></td>
       </tr>
   </table>
@@ -39,14 +38,14 @@ Description: This form is a registration copy for patients who are being admitte
           <tr class="form">
        <th class="form" colspan="3">New Patient Registration</th>
      </tr>
-    <tr class="form">
-  <td align="left">
+    <tr class="form"></tr>
+  <td align="left"></td>
+        </hr>
     <!-- Body Elements -->
 <label for="firstname">First Name</label>
 <label for="middleinitial">Middle Initial</label>
 <label for="lastname">Last Name</label>
-  </td>
-      <td> 
+      <tr> 
       <input type="text" size="30"
        minlength="2" maxlength="30"
        name="firstname"
@@ -65,7 +64,7 @@ Description: This form is a registration copy for patients who are being admitte
 <span id="gov_name">
     </tr>
 </span>
-          <tr class="form">
+          <tr class="form"></tr>
             <td align="right">
 <label for="address">Address:</label>
           </td>
@@ -80,6 +79,8 @@ Description: This form is a registration copy for patients who are being admitte
 <label for="state">State:</label>
  <label for="zip">Zipcode:</label>
   <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode">
+            </td>
+          </tr>
 <td>
         <input type="text" size="10" maxlength="35" id="city" name="city" required>
   <select required>
@@ -145,18 +146,18 @@ Description: This form is a registration copy for patients who are being admitte
             <tr class="form">
               <td align="right">
               <label for="phone">Phone Number</label>
-        </td>
+        </tr>
           <td> 
-            <input type="text" size="30" maxlength="10">
+            <input type="text" size="30" maxlength="10"
               id="cell_phone" name="cell_phone" placeholder="123-456-7890">
           </td>
-            <tr class="form">
+            <tr class="form"></tr>
               <td align="right">
               <label for="email">Email:</label>
           </td>
           <td> 
             <input type="text" size="30" maxlength="35" 
-              id="email" name="email" placeholder="youremail12@gmail.com"
+              id="email" name="email" placeholder="youremail12@gmail.com">
               </td>
             <tr>
               <td colspan="3"> 
@@ -166,13 +167,11 @@ Description: This form is a registration copy for patients who are being admitte
                   </center>
               </td>
             </tr>
-          </td>
 <!-- Enter in Javascript for the date -->
       <script src="mis3371hw1.js"></script>
       <script>
         document.getElementById("today").innerHTML = new Date().toLocaleDateString();
       </script>
-    </tr>
         </table>
     </form>
   </div>
