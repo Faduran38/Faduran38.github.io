@@ -64,11 +64,11 @@ Description: This form is a registration copy for patients who are being admitte
 </span>
           <tr class="form"></tr>
             <td align="right">
-<label for="address">Address:</label>
+<label for="address1">Address:</label>
           </td>
       <td>
         <input trype="text" size="30" 
-          maxlength="35" id="address1" name="address1"
+          maxlength="30" id="address1" name="address1"
           placeholder="Primary Address" required>
       </td>
           <tr class="form">
@@ -80,7 +80,7 @@ Description: This form is a registration copy for patients who are being admitte
             </td>
           </tr>
 <td>
-        <input type="text" size="10" maxlength="35" id="city" name="city" required>
+        <input type="text" size="10" maxlength="30" id="city" name="city" required>
   <select required>
     <option value=""></option>
                 <option value="AL">Alabama</option>
@@ -155,8 +155,20 @@ Description: This form is a registration copy for patients who are being admitte
           </td>
           <td> 
             <input type="text" size="30" maxlength="35" 
-              id="email" name="email" placeholder="youremail12@gmail.com">
+              id="email" name="email" placeholder="name@domain.tdl">
               </td>
+          <div class="conditions" title="Select health conditions you have experienced.">
+            <label><input type="checkbox" 
+                     name="medical" value="chickenpox">Chicken Pox</label>
+            <label><input type="checkbox"
+                     name="medical" value="measles">Measles</label>
+            <label><input type="checkbox"
+                     name="medical" value="Covid19">Covid-19</label>
+            <label><input type="checkbox"
+                     name="medical" value="tetanus">Tetanys</label>
+            <label><input type="checkbox"
+                     name="medical" value="flu">Flu</label>
+          </div>
             <tr>
               <td colspan="3"> 
                 <center>
