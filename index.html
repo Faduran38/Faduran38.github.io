@@ -40,15 +40,16 @@ Description: This form is a registration copy for patients who are being admitte
   <td align="left"></td>
         </hr>
     <!-- Body Elements -->
-<li><label for="firstname">First Name</label>
-<li><label for="middleinitial">Middle Initial</label>
-<li><label for="lastname">Last Name</label>
-</li>
-      <tr> 
+<table>
+    <tr>
+      <span>
+<td><label for="firstname">First Name</label></td>
+<td><label for="middleinitial">Middle Initial</label></td>
+<td><label for="lastname">Last Name</label></td>
       <input type="text" size="30"
        minlength="2" maxlength="30"
        name="firstname"
-       placeholder="Required"
+       placeholder="First Name"
        required >
         <input type="text" size="30"
        minlength="1" maxlength="1"
@@ -58,8 +59,11 @@ Description: This form is a registration copy for patients who are being admitte
         <input type="text" size="30"
        minlength="2" maxlength="30"
        name="lastname"
-       placeholder="Required"
+       placeholder="Last Name"
        required >
+      </tr>
+      </span>
+</table>
 <span id="gov_name">
     </tr>
 </span>
