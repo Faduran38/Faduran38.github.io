@@ -80,13 +80,14 @@ Description: This form is a registration copy for patients who are being admitte
           <tr class="form">
             <td align="right">
 <label for="city">City:</label>
+ <input type="text" size="10" maxlength="30" id="city" name="city" required>
 <label for="state">State:</label>
  <label for="zip">Zipcode:</label>
   <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode">
             </td>
           </tr>
+          <tr>
 <td>
-        <input type="text" size="10" maxlength="30" id="city" name="city" required>
   <select required>
     <option value=""></option>
                 <option value="AL">Alabama</option>
@@ -140,13 +141,16 @@ Description: This form is a registration copy for patients who are being admitte
                 <option value="WV">West Virginia</option>
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
+          </tr>
             </select>
+  <tr>
  <label for="gender">Gender</label>
 <label for="male">Male</label>
 <label for="female">Female</label>
   <input type="radio" name="gender" value="male" required>  
   <input type="radio" name="gender" value="female" required> 
-</td> 
+</tr> 
+        </td>
       
             <tr class="form">
               <td align="right">
