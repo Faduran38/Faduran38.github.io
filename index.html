@@ -43,20 +43,20 @@ Description: This form is a registration copy for patients who are being admitte
     <tr>
       <span>
         <ul>
-      <td align="right">
-<li><label for="firstname">First Name</label></li>
+      <td align="left">
+<li><label for="firstname">First Name: </label></li>
          <input type="text" size="30"
        minlength="2" maxlength="30"
        name="firstname"
        placeholder="First Name"
        required >
-<li><label for="middleinitial">Middle Initial</label></li>
+<li><label for="middleinitial">Middle Initial: </label></li>
         <input type="text" size="30"
        minlength="1" maxlength="1"
        name="middleinitial"
        placeholder="MI"
       required >
-<li><label for="lastname">Last Name</label></li>
+<li><label for="lastname">Last Name: </label></li>
         <input type="text" size="30"
        minlength="2" maxlength="30"
        name="lastname"
@@ -68,6 +68,13 @@ Description: This form is a registration copy for patients who are being admitte
 <span id="gov_name">
     </tr>
 </span>
+          <tr>
+            <td><label for="birthdate">Date of Birth: </label></td>
+            <td>
+              <input type="date" id="birthdate" name="birthdate"
+                title="Please select the day you were born">
+            </td>
+          </tr>
           <tr class="form"></tr>
             <td align="right">
 <label for="address1">Address:</label>
