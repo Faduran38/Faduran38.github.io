@@ -43,7 +43,7 @@ Description: This form is a registration copy for patients who are being admitte
     <tr>
       <span>
         <ul>
-          <div id="body">
+          <div id="name">
       <td align="left">
 <li><label for="firstname">First Name: </label></li>
          <input type="text" size="30"
@@ -69,17 +69,21 @@ Description: This form is a registration copy for patients who are being admitte
 <span id="gov_name">
     </tr>
 </span>          
-          <tr class="main">
+          <tr>
+            <div id="dob">
             <td><label for="birthdate">Date of Birth: </label></td>
               <input type="date" id="birthdate" name="birthdate"
-                title="Please select the day you were born">
+                title="Please select the day you were born">   
+            </div>
           </tr>
-          <tr class="main">
+          <tr>
+            <div id="ssn">
             <td><label for="ssn">SSN: </td>
             <td>
               <input type="text" id="ssn" name="ssn" pattern="\d{3}-\d{2}-\d{4}"
                 title="Enter in your SSN">
             </td>
+            </div>
           </tr>
           <tr class="form">
             <td align="right">
