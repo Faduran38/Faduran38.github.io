@@ -195,19 +195,23 @@ Description: This form is a registration copy for patients who are being admitte
           <label>Medical History (check all that apply): </label>
           <div id="conditions" title="Select health conditions you have experienced.">
             <label><input type="checkbox" 
-                     name="medical" value="chickenpox">Chicken Pox</label>
+                     name="medical" value="cholesterol">High Cholesterol</label>
             <label><input type="checkbox"
                      name="medical" value="measles">Measles</label>
             <label><input type="checkbox"
                      name="medical" value="Covid19">Covid-19</label>
             <label><input type="checkbox"
-                     name="medical" value="tetanus">Tetanys</label>
+                     name="medical" value="infection">Gum Infection</label>
             <label><input type="checkbox"
                      name="medical" value="flu">Flu</label>
           </div>
             <label for="currentPain">What is the current pain you are feeling on the scale from 1-10?</label>
             <input type="range" id="painRange" name="painRange" 
               min="1" max="10" title="Please move the scale to how much pain you are in currently.">
+        <tr>
+          <label for="comments">Please explain what you are experiencing...</label>
+          <textarea id="comments" name="comments" cols="50" rows="3"></textarea>
+        </tr>            
             <tr>
               <td colspan="3"> 
                 <center>
