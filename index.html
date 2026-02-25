@@ -70,9 +70,14 @@ Description: This form is a registration copy for patients who are being admitte
 </span>
           <tr>
             <td><label for="birthdate">Date of Birth: </label></td>
-            <td>
               <input type="date" id="birthdate" name="birthdate"
                 title="Please select the day you were born">
+          </tr>
+          <tr>
+            <td><label for="ssn">SSN: </td>
+            <td>
+              <input type="text" id="ssn" name="ssn" pattern="\d{3}-\d{2}-\d{4}"
+                title="Enter in your SSN">
             </td>
           </tr>
           <tr class="form">
