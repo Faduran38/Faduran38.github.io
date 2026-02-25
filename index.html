@@ -164,15 +164,15 @@ Description: This form is a registration copy for patients who are being admitte
   <input type="radio" name="gender" value="female" required> 
 </tr> 
         </td>
-      
+      <div id="contactInformation">
             <tr class="form">
               <td align="right">
               <label for="phone">Phone Number</label>
-        </tr>
-          <td> 
             <input type="text" size="30" maxlength="10"
               id="cell_phone" name="cell_phone" placeholder="123-456-7890">
           </td>
+            </tr>
+      </div>
             <tr class="form"></tr>
               <td align="right">
               <label for="email">Email:</label>
@@ -181,6 +181,7 @@ Description: This form is a registration copy for patients who are being admitte
             <input type="text" size="30" maxlength="35" 
               id="email" name="email" placeholder="name@domain.tdl">
               </td>
+          <div id="medicalHistory">
           <label>Medical History (check all that apply): </label>
           <div id="conditions" title="Select health conditions you have experienced.">
             <label><input type="checkbox" 
