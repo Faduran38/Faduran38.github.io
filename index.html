@@ -162,7 +162,7 @@ Description: This form is a registration copy for patients who are being admitte
           </tr>
   <tr>
     <div id="gender">
- <label for="gender">Gender</label>
+ <label for="gender">Gender: </label>
 <label for="male">Male</label>
 <label for="female">Female</label>
   <input type="radio" name="gender" value="male" required>  
@@ -178,7 +178,6 @@ Description: This form is a registration copy for patients who are being admitte
               id="cell_phone" name="cell_phone" placeholder="123-456-7890">
           </td>
             </tr>
-      </div>
             <tr class="form"></tr>
               <td align="right">
               <label for="email">Email:</label>
@@ -187,11 +186,16 @@ Description: This form is a registration copy for patients who are being admitte
             <input type="text" size="30" maxlength="35" 
               id="email" name="email" placeholder="name@domain.tdl">
               </td>
+      </div>
+          <tr>
+            <div id="vaccinations">
          <label>Do you have vaccination?</label>
           <div id="vaccinations" title="Have you recieved a vaccine before?">
             <label><input type="radio" name="vaccination" value="yes">Yes</label>
             <label><input type="radio" name="vacciantion" value="no">No</label>
           </div>
+            </div>
+          </tr>
           <label>Do you have insurance?</label>
           <div id="insurance" title="Do you have insurance?">
             <label><input type="radio" name="insurance" value="yes">Yes</label>
@@ -215,9 +219,11 @@ Description: This form is a registration copy for patients who are being admitte
             <input type="range" id="painRange" name="painRange" 
               min="1" max="10" title="Please move the scale to how much pain you are in currently.">
         <tr>
+          <div id="pain">
           <label for="comments">Please explain what you are experiencing...</label>
           <textarea id="comments" name="comments" cols="50" rows="3"></textarea>
-        </tr>            
+        </tr>
+          </div>
             <tr>
               <td colspan="3"> 
                 <center>
