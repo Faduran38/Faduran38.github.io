@@ -43,7 +43,7 @@ Description: This form is a registration copy for patients who are being admitte
     <tr>
       <span>
         <ul>
-          <div class="body">
+          <div id="body">
       <td align="left">
 <li><label for="firstname">First Name: </label></li>
          <input type="text" size="30"
@@ -68,8 +68,7 @@ Description: This form is a registration copy for patients who are being admitte
 </table>
 <span id="gov_name">
     </tr>
-</span>
-          
+</span>          
           <tr>
             <td><label for="birthdate">Date of Birth: </label></td>
               <input type="date" id="birthdate" name="birthdate"
@@ -182,9 +181,8 @@ Description: This form is a registration copy for patients who are being admitte
             <input type="text" size="30" maxlength="35" 
               id="email" name="email" placeholder="name@domain.tdl">
               </td>
-          <div class="group">
           <label>Medical History (check all that apply): </label>
-          <div class="conditions" title="Select health conditions you have experienced.">
+          <div id="conditions" title="Select health conditions you have experienced.">
             <label><input type="checkbox" 
                      name="medical" value="chickenpox">Chicken Pox</label>
             <label><input type="checkbox"
@@ -195,7 +193,6 @@ Description: This form is a registration copy for patients who are being admitte
                      name="medical" value="tetanus">Tetanys</label>
             <label><input type="checkbox"
                      name="medical" value="flu">Flu</label>
-          </div>
           </div>
             <tr>
               <td colspan="3"> 
