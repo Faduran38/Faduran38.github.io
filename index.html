@@ -233,12 +233,12 @@ Description: This form is a registration copy for patients who are being admitte
           <tr>
             <div id="password">
               <label for="pass">Password: </label>
-              <input type="text" id="pass" name="pass" value="FakePSW" placeholder="Please enter in a password" required>
+              <input type="password" id="pass" name="pass" value="FakePSW" placeholder="Please enter in a password" required>
             </div>
           </tr>
           <tr>
           <label for="reenter">Re-enter Password: </label>
-          <input type="text" id="reenter" name="reenter" value="FakePSW" placeholder="Please re-enter your password" required>
+          <input type="password" id="reenter" name="reenter" value="FakePSW" placeholder="Please re-enter your password" required>
             <input type="checkbox" onclick="myFunction()">Show Password
           </tr>
             <tr>
@@ -258,6 +258,16 @@ Description: This form is a registration copy for patients who are being admitte
       <script>
         document.getElementById("today").innerHTML = new Date().toLocaleDateString();
       </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("pass");
+      if(x.type === "password") {
+        x.type = "text";}
+      else {
+        x.type = "password";
+      }
+    }
+  </script>
         </table>
     </form>
   </div>
