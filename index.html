@@ -12,19 +12,19 @@ Description: This form is a registration copy for patients who are being admitte
       <title>Faviana's HW 1</title>
 <!-- Load in External CSS -->
       <link rel="stylesheet" href="mis3371hw1.css">
-    </head>
+  </head>
   <!-- Header of HTML -->
   <header>
-  <h1>MedicalFirst Clinic</h1>
+    <h1>MedicalFirst Clinic</h1>
   </header>
-              <td>
-            <div id="bannerimage"></div>
-<img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px"></td>
-        <div id="mainheader">
-       <h2>PATIENT REGISTRATION FORM</h2>
-          <table width="100%">
-            <td valign="bottom" align="right">Today's date is: <span id="today">Date goes here </span></td>
-          </td>
+   <td>
+      <div id="bannerimage"></div>
+  <img src="hosptial.png" alt="hospital logo" width="300" height="200" style="vertical-align:middle; margin: 0px 50px"></td>
+  <div id="mainheader">
+    <h2>PATIENT REGISTRATION FORM</h2>
+      <table width="100%">
+        <td valign="bottom" align="right">Today's date is: <span id="today">Date goes here </span></td>
+     </td>
   </table>
 </div> 
 <hr>
@@ -36,12 +36,12 @@ Description: This form is a registration copy for patients who are being admitte
      </tr>
     <tr class="form"></tr>
   <td align="left"></td>
-        </hr>
+</hr>
     <!-- Body Elements -->
-          <body>
+<body>
 <table>
-    <tr>
-      <span>
+   <tr>
+     <span>
         <ul>
           <div id="name">
       <td align="left">
@@ -63,45 +63,45 @@ Description: This form is a registration copy for patients who are being admitte
        name="lastname"
        placeholder="Last Name"
        required >
-        </ul>
-      </span>
+    </ul>
+  </span>
 </table>
 <span id="gov_name">
     </tr>
 </span>          
-          <tr>
-            <div id="dob">
-            <td><label for="birthdate">Date of Birth: </label></td>
-              <input type="date" id="birthdate" name="birthdate"
+ <tr>
+     <div id="dob">
+       <td><label for="birthdate">Date of Birth: </label></td>
+          <input type="date" id="birthdate" name="birthdate"
                 title="Please select the day you were born">   
-            </div>
-          </tr>
-          <tr>
-            <div id="ssn">
-            <td><label for="ssn">SSN: </td>
+          </div>
+      </tr>
+   <tr>
+       <div id="ssn">
+          <td><label for="ssn">SSN: </td>
             <td>
               <input type="text" id="ssn" name="ssn" pattern="\d{3}-\d{2}-\d{4}"
                 title="Enter in your SSN">
             </td>
-            </div>
-          </tr>
-          <tr class="form">
-            <td align="right">
-<label for="address1">Address:</label>
-          </td>
-      <td>
+       </div>
+   </tr>
+ <tr class="form">
+     <td align="right">
+        <label for="address1">Address:</label>
+     </td>
+   <td>
         <input trype="text" size="30" 
           maxlength="30" id="address1" name="address1"
           placeholder="Primary Address" required>
-      </td>
-          </tr>
-          <tr class="form">
-            <td align="right">
-<label for="city">City:</label>
- <input type="text" size="10" maxlength="30" id="city" name="city" required>
-<label for="state">State:</label>
-<td>
-  <select required>
+    </td>
+ </tr>
+     <tr class="form">
+       <td align="right">
+          <label for="city">City:</label>
+             <input type="text" size="10" maxlength="30" id="city" name="city" required>
+          <label for="state">State:</label>
+        <td>
+    <select required>
     <option value=""></option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -155,11 +155,11 @@ Description: This form is a registration copy for patients who are being admitte
                 <option value="WI">Wisconsin</option>
                 <option value="WY">Wyoming</option>
     </select>
-    <label for="zip">Zipcode:</label>
-  <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode">
-            </td>
-          </tr>
-          </tr>
+ <label for="zip">Zipcode:</label>
+ <input type="text" pattern=[0-9]{10} name="zip" placeholder="Zipcode">
+        </td>
+    </tr>
+ </tr>
   <tr>
     <div id="gender">
  <label for="gender">Gender: </label>
@@ -169,34 +169,34 @@ Description: This form is a registration copy for patients who are being admitte
   <input type="radio" name="gender" value="female" required> 
     </div>
 </tr> 
-        </td>
-      <div id="contactInformation">
-            <tr class="form">
+</td>
+    <div id="contactInformation">
+        <tr class="form">
               <td align="right">
               <label for="phone">Phone Number</label>
             <input type="text" size="30" maxlength="10"
               id="cell_phone" name="cell_phone" placeholder="123-456-7890">
           </td>
-            </tr>
-            <tr class="form"></tr>
-              <td align="right">
-              <label for="email">Email:</label>
-          </td>
-          <td> 
-            <input type="text" size="30" maxlength="35" 
+      </tr>
+   <tr class="form"></tr>
+       <td align="right">
+          <label for="email">Email:</label>
+        </td>
+      <td> 
+        <input type="text" size="30" maxlength="35" 
               id="email" name="email" placeholder="name@domain.tdl">
-              </td>
-      </div>
-          <tr>
-            <div id="shots">
+     </td>
+  </div>
+    <tr>
+       <div id="shots">
          <label>Do you have a vaccination?</label>
           <div id="vaccinations" title="Have you recieved a vaccine before?">
             <label><input type="radio" name="vaccination" value="yes">Yes</label>
             <label><input type="radio" name="vacciantion" value="no">No</label>
-          </div>
-            </div>
-          </tr>
-          <label>Do you have insurance?</label>
+        </div>
+     </div>
+   </tr>
+         <label>Do you have insurance?</label>
           <div id="insurance" title="Do you have insurance?">
             <label><input type="radio" name="insurance" value="yes">Yes</label>
             <label><input type="radio" name="insurance" value="no">No</label>
