@@ -23,5 +23,5 @@ a:visited {
   color: red;
 }
 .center {
- display: flex;
+ margin: auto;
 }
