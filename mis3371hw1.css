@@ -9,7 +9,7 @@ Description: this will be used to style the html and website that is created for
 body {
   background-color: #92a8d1;
   font-family: "Times New Roman", Times, serif;
-  text-align: center;
+  text-align: right;
 }
 h1 {
   text-align: center;
