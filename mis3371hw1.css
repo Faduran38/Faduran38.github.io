@@ -23,5 +23,5 @@ a:visited {
   color: red;
 }
 .center {
-  justify-content: center;
+ align: center;
 }
