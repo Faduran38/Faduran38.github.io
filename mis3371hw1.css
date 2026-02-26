@@ -22,6 +22,6 @@ h2 {
 a:visited {
   color: red;
 }
-.center {
- align: center;
+.bannerimage {
+ margin: auto;
 }
