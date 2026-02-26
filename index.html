@@ -221,7 +221,7 @@ Description: This form is a registration copy for patients who are being admitte
         <tr>
           <div id="pain">
           <label for="comments">Please explain what you are experiencing...</label>
-          <textarea id="comments" name="comments" cols="50" rows="3"></textarea>
+          <textarea id="comments" name="comments" max="20" cols="50" rows="3"></textarea>
         </tr>
           </div>
           <tr>
@@ -233,12 +233,12 @@ Description: This form is a registration copy for patients who are being admitte
           <tr>
             <div id="password">
               <label for="pass">Password: </label>
-              <input type="text" id="pass" name="pass" placeholder="Please enter in a password" required>
+              <input type="text" id="pass" name="pass" value="FakePSW" placeholder="Please enter in a password" required>
             </div>
           </tr>
           <tr>
           <label for="reenter">Re-enter Password: </label>
-          <input type="text" id="reenter" name="reenter" placeholder="Please re-enter your password" required>
+          <input type="text" id="reenter" name="reenter" value="FakePSW" placeholder="Please re-enter your password" required>
           </tr>
             <tr>
               <td colspan="3"> 
@@ -250,7 +250,7 @@ Description: This form is a registration copy for patients who are being admitte
             </tr>
           <!-- Footer in HTML-->
     <div id="footer">
-      <p>MedicalFirst Clinic<br>Contact Us!>Houston, TX 77002</p>
+      <p>MedicalFirst Clinic<br>Contact Us!<br>Houston, TX 77002</p>
     </div>
 <!-- Enter in Javascript for the date -->
       <script src="mis3371hw1.js"></script>
